@@ -13,7 +13,7 @@
         caps: caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&kp LSHFT>, <&kp CAPS>;
 
             label = "caps";
@@ -22,7 +22,7 @@
         ralt: ralt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&kp RIGHT_ALT>, <&kt RIGHT_ALT>;
 
             label = "ralt";
@@ -31,7 +31,7 @@
         l_numbers: l_numbers {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&mo 1>, <&tog 1>, <&tog 0>;
 
             label = "l_numbers";
@@ -40,16 +40,16 @@
         ctrl: ctrl {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&kp LCTRL>, <&kt LCTRL>;
 
-            label = "CTRL";
+            label = "CTR";
         };
 
         l_arrows: l_arrows {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&mo 2>, <&tog 2>, <&tog 0>;
 
             label = "L_ARROWS";
@@ -63,11 +63,11 @@
 
         default_layer {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3      &kp N4        &kp N5                                                                &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp ESCAPE  &kp Q      &kp W         &kp E       &kp R         &kp T   &kp LPAR                                   &kp RPAR           &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp TAB     &kp A      &kp S         &kp D       &kp F         &kp G   &kp LEFT_BRACKET                           &kp RIGHT_BRACKET  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp GRAVE   &caps      &kp Z         &kp X       &kp C         &kp V   &kp B             &kp ENTER    &kp RETURN  &kp EQUAL          &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &caps
-&kp LCTRL   &kp LCTRL  &kp LEFT_GUI  &l_numbers  &kp LEFT_ALT          &kp BACKSPACE     &kp DEL      &ctrl       &kp SPACE                  &ralt   &l_arrows  &none    &none     &tog 0
+&kp ESC        &kp N1  &kp N2         &kp N3        &kp N4     &kp N5                                                  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB        &kp Q   &kp W          &kp F         &kp P      &kp G   &kp LPAR                             &kp RPAR   &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BACKSLASH
+&kp BACKSPACE  &kp A   &kp R          &kp S         &kp T      &kp D   &kp LBKT                             &kp RBKT   &kp H   &kp E   &kp I      &kp O    &kp SQT   &kp MINUS
+&kp LSHFT      &kp Z   &kp X          &kp C         &kp V      &kp B   &kp GRAVE   &kp ENTER    &kp RETURN  &kp EQUAL  &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&ctrl          &none   &kp BACKSPACE  &kp LEFT_GUI  &l_arrows          &l_numbers  &kp LALT     &ctrl       &kp SPACE          &ralt   &kp DEL    &none    &none     &none
             >;
         };
 
