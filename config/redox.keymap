@@ -78,7 +78,7 @@
 &kp TAB        &kp Q   &kp W   &kp E     &kp R          &kp T   &kp LPAR                            &kp RPAR   &kp Y   &kp U          &kp I      &kp O    &kp P          &kp BACKSLASH
 &kp BACKSPACE  &kp A   &kp S   &kp D     &hold LSHFT F  &kp G   &kp LBKT                            &kp RBKT   &kp H   &hold RSHFT J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &caps          &kp Z   &kp X   &kp C     &kp V          &kp B   &kp GRAVE  &kp ENTER    &kp RETURN  &kp EQUAL  &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH       &caps
-&ctrl          &none   &none   &kp LALT  &l_arrows              &ctrl      &kp LGUI     &l_numbers  &kp SPACE          &ralt          &kp DEL    &none    &none          &to 0
+&none          &none   &none   &kp LALT  &l_arrows              &kp LCTRL  &kp LGUI     &l_numbers  &kp SPACE          &kp RALT       &kp DEL    &none    &none          &to 0
             >;
         };
 
